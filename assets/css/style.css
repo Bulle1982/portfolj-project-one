@@ -247,7 +247,8 @@ footer {
   color: #3a3a3a;
 }
 
-p {
-  background-color: #e2ebe6c4;
-  padding: 3px;
+.background-colour {
+  border: 1px solid #a8c5b4c4;
+  border-radius: 3px;
+  background-color: #a8c5b4c4;;
 }
