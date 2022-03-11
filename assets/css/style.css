@@ -13,7 +13,6 @@ body {
 .header-background-color {
   height: 100px;
   border-radius: 5px;
-  width: 100%;
 }
 h1,
 h2,
@@ -22,6 +21,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #252525;
+  text-align: center;
 }
 #logo {
   float: left;
@@ -89,31 +89,26 @@ hr {
 .qualified {
   width: 32%;
   height: 300px;
-  /*background-color: silver;*/
   float: left;
   margin-left: 10px;
   border-radius: 10px;
-  border: 1px solid #3a3a3a;
+ 
 }
 
 .languages {
   width: 32%;
   height: 300px;
-  /*background-color: silver;*/
   margin: 0 auto;
   border-radius: 10px;
-  border: 1px solid #3a3a3a;
 }
 
 .booking {
   width: 32%;
   height: 300px;
-  /*background-color: silver;*/
   float: right;
   margin-top: -300px;
   margin-right: 10px;
   border-radius: 10px;
-  border: 1px solid #3a3a3a;
 }
 
 /* Our satisfied customers box styling*/
@@ -196,7 +191,7 @@ legend {
 }
 
 .customer-section {
-  height: 600px;
+  height: 400px;
 }
 
 .customer-links > li {
@@ -251,6 +246,7 @@ footer {
   border: 1px solid #a8c5b4c4;
   border-radius: 3px;
   background-color: #a8c5b4c4;;
+  text-align: center;
 }
 
 
