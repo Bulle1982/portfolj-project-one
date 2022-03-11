@@ -252,3 +252,30 @@ footer {
   border-radius: 3px;
   background-color: #a8c5b4c4;;
 }
+
+
+@media screen and (max-width: 700px) {
+  #ccbox, .right, .booking, .menu li, #logo, .left, #form-div, .qualified, #company-offer {
+    width: auto;
+    float: none;
+  }
+
+  #ccbox, .right, .booking, .menu li, #logo, .left, #form-div, .qualified, #company-offer {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+}
+
+@media (max-width: 100px) {
+  body {
+    width: 30vw;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
