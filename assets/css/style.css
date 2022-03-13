@@ -1,33 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   border: none;
 }
+
 body {
   font-family: Lato sans-serif;
   font-weight: 300;
   color: #3a3a3a;
 }
+
 /* heading and logo*/
 .header-background-color {
-  height: 100px;
+  height: 80px;
   border-radius: 5px;
+  margin-top: 0;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 1;
 }
+
 h1,
 h2,
 h3 {
-  font-family: "Oswald" sans-serif;
+  font-family: "Oswald"sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #252525;
   text-align: center;
 }
+
 #logo {
   float: left;
   font-size: 270%;
   margin-left: 30px;
 }
+
 /* navigations links*/
 #menu {
   font-size: 110%;
@@ -45,12 +56,16 @@ h3 {
   text-transform: uppercase;
   margin-right: 30px;
 }
+
 #menu a {
   text-decoration: none;
   color: #3a3a3a;
 }
 
-#menu,
+#menu a:hover {
+  border-bottom: 1px solid #3a3a3a;
+}
+
 input[type="submit"] a:hover {
   border-bottom: 1px solid #3a3a3a;
 }
@@ -62,22 +77,44 @@ input[type="submit"] a:hover {
 /* Hero image*/
 
 #hero-outer {
+  position: relative;
   height: 600px;
   width: 100%;
   overflow: hidden;
 }
+
 .hero-image {
+  float: left;
   height: 600px;
-  width: 100%;
+  width: 50%;
   background: url(../images/hero-image.jpg) no-repeat center center;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 10px;
+  margin-top: 80px;
 }
+
+.hero-text {
+  height: 450px;
+  float: right;
+  padding: 15px;
+  margin-top: 100px;
+  margin-right: 20px;
+  border: 1px solid #3a3a3a;
+  border-radius: 5px;
+
+}
+
+.services li {
+  list-style-type: none;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px;
+}
+
 /* Company offer*/
 #company-offer {
-  height: 400px;
+  height: 600px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 hr {
@@ -92,23 +129,29 @@ hr {
   float: left;
   margin-left: 10px;
   border-radius: 10px;
- 
+  border: 1px solid #3a3a3a;
+
+
 }
 
-.languages {
+.booking {
   width: 32%;
   height: 300px;
   margin: 0 auto;
   border-radius: 10px;
+  border: 1px solid #3a3a3a;
+
 }
 
-.booking {
+.languages {
   width: 32%;
   height: 300px;
   float: right;
   margin-top: -300px;
   margin-right: 10px;
   border-radius: 10px;
+  border: 1px solid #3a3a3a;
+
 }
 
 /* Our satisfied customers box styling*/
@@ -120,16 +163,49 @@ hr {
   margin-right: 25px;
 }
 
+.customer-section {
+  height: 600px;
+  height: 400px;
+}
+
+.customer-links>li {
+  list-style: none;
+}
+
+.customers-border {
+  border: 1px solid #3a3a3a;
+}
+
+.left {
+  float: left;
+  margin-right: 400px;
+  margin-left: 5px;
+  padding-top: 5px;
+}
+
+.right {
+  float: right;
+  margin-right: 5px;
+}
+
+.center {
+  margin: 0 auto;
+  padding-top: -10px;
+}
+
 #customers-head {
   text-align: center;
 }
 
 form {
+  float: right;
   width: 400px;
-  padding: 25px;
+  padding-top: 0;
   border-radius: 8px;
-  margin-left: 0;
-  background-color: white;
+  margin-top: -500px;
+  margin-left: 5px;
+  margin-right: 15px;
+
 }
 
 input[type="submit"] {
@@ -160,6 +236,8 @@ fieldset {
   margin-top: 20px;
   padding-left: 10px;
   margin-left: 0;
+
+
 }
 
 legend {
@@ -169,69 +247,43 @@ legend {
   margin: 20px 0 10px 0;
 }
 
-#form-div {
-  float: left;
-}
-
-#form-service {
+.our-customers {
+  display: inline;
+  background-color: green;
+  height: 100px;
+  width: 22%;
   margin: 0 auto;
 }
-#ccbox {
-  float: right;
-  height: 250px;
-  margin-top: 50px;
-  margin-right: 50px;
-  padding: 5px;
-  border: 1px solid #3a3a3a;
-  border-radius: 5px;
-}
 
-.clear {
-  clear: both;
-}
-
-.customer-section {
-  height: 400px;
-}
-
-.customer-links > li {
-  list-style: none;
-}
-
-.customers-border {
-  border: 1px solid #3a3a3a;
-}
-
-.left {
-  float: left;
-  margin-right: 400px;
-  margin-left: 5px;
-  padding-top: 5px;
-}
-
-.right {
-  float: right;
-  margin-right: 5px;
-}
-
-.center {
-  margin: 0 auto;
-  padding-top: -10px;
-}
 /* footer*/
 
 header,
 footer {
+  background-color: #d5dfd9c4;
+}
+
+footer {
   height: 150px;
-  background-color: #a8c5b4c4;
   padding: 0;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100px;
+  background-color: #d5dfd9c4;
+  padding-bottom: 20px;
 }
 
 .social-media {
   text-align: center;
 }
 
-.social-media > li {
+.social-media>li {
   display: inline;
 }
 
@@ -245,24 +297,42 @@ footer {
 .background-colour {
   border: 1px solid #a8c5b4c4;
   border-radius: 3px;
-  background-color: #a8c5b4c4;;
+  background-color: #a8c5b4c4;
+  margin-top: 20px;
   text-align: center;
 }
 
 
 @media screen and (max-width: 700px) {
-  #ccbox, .right, .booking, .menu li, #logo, .left, #form-div, .qualified, #company-offer {
+
+  #ccbox,
+  .right,
+  .booking,
+  .menu li,
+  #logo,
+  .left,
+  #form-div,
+  .qualified,
+  #company-offer {
     width: auto;
     float: none;
   }
 
-  #ccbox, .right, .booking, .menu li, #logo, .left, #form-div, .qualified, #company-offer {
+  #ccbox,
+  .right,
+  .booking,
+  .menu li,
+  #logo,
+  .left,
+  #form-div,
+  .qualified,
+  #company-offer {
     padding-right: 0;
     padding-left: 0;
     padding-top: 0;
     padding-bottom: 0;
   }
-  
+
 }
 
 @media (max-width: 100px) {
