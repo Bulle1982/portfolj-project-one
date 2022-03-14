@@ -92,6 +92,15 @@ input[type="submit"] a:hover {
   margin-top: 80px;
 }
 
+.hero-image-caption {
+  float: right;
+  height: 400px;
+  width: 50%;
+  background: url(../images/hero-image-caption.png) no-repeat center center;
+  margin-left: 10px;
+  margin-top: -500px;
+}
+
 .hero-text {
   height: 450px;
   float: right;
@@ -114,6 +123,7 @@ input[type="submit"] a:hover {
 #company-offer {
   height: 600px;
   text-align: center;
+  margin-top: 80px;
   margin-bottom: 80px;
 }
 
@@ -154,6 +164,10 @@ hr {
 
 }
 
+.margin-top {
+  margin-top: 0;
+}
+
 /* Our satisfied customers box styling*/
 
 #customers-container {
@@ -164,8 +178,8 @@ hr {
 }
 
 .customer-section {
-  height: 600px;
   height: 400px;
+  margin-top: 25px;
 }
 
 .customer-links>li {
@@ -197,14 +211,27 @@ hr {
   text-align: center;
 }
 
-form {
+.contact-info {
   float: right;
-  width: 400px;
-  padding-top: 0;
+  margin-right: 25px;
+  margin-top: 40px;
+  padding: 5px;
+  width: 600px;
+  height: 257px;
+  text-align: center;
+  margin-bottom: 180px;
+  border: 1px solid #3a3a3a;
+  background-color: #d8e2dcc4;
+
+}
+
+form {
+  width: 600px;
+  padding-top: 10px;
   border-radius: 8px;
-  margin-top: -500px;
-  margin-left: 5px;
+  margin-left: 15px;
   margin-right: 15px;
+  margin-bottom: 180px;
 
 }
 
@@ -245,14 +272,6 @@ legend {
   font-weight: 600;
   text-transform: uppercase;
   margin: 20px 0 10px 0;
-}
-
-.our-customers {
-  display: inline;
-  background-color: green;
-  height: 100px;
-  width: 22%;
-  margin: 0 auto;
 }
 
 /* footer*/
@@ -298,50 +317,6 @@ footer ul {
   border: 1px solid #a8c5b4c4;
   border-radius: 3px;
   background-color: #a8c5b4c4;
-  margin-top: 20px;
+  margin-top: 0;
   text-align: center;
-}
-
-
-@media screen and (max-width: 700px) {
-
-  #ccbox,
-  .right,
-  .booking,
-  .menu li,
-  #logo,
-  .left,
-  #form-div,
-  .qualified,
-  #company-offer {
-    width: auto;
-    float: none;
-  }
-
-  #ccbox,
-  .right,
-  .booking,
-  .menu li,
-  #logo,
-  .left,
-  #form-div,
-  .qualified,
-  #company-offer {
-    padding-right: 0;
-    padding-left: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-}
-
-@media (max-width: 100px) {
-  body {
-    width: 30vw;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 }
