@@ -320,3 +320,11 @@ footer ul {
   margin-top: 0;
   text-align: center;
 }
+
+@media  screen and (max-width: 950px) {
+  #menu {
+    clear: left;
+    float: left;
+    line-height: 25px;
+  }
+}
