@@ -318,6 +318,7 @@ footer ul {
   margin-top: 0;
   text-align: center;
 }
+/* media queries*/
 
 @media  screen and (max-width: 950px) {
   #menu {
