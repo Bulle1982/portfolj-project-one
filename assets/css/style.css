@@ -140,8 +140,6 @@ hr {
   margin-left: 10px;
   border-radius: 10px;
   border: 1px solid #3a3a3a;
-
-
 }
 
 .booking {
@@ -325,6 +323,16 @@ footer ul {
   #menu {
     clear: left;
     float: left;
-    line-height: 25px;
+    line-height: 15px;
+
   }
+
+  #menu li {
+    margin-right: 15px;
+  }
+  .header-background-color {
+    height: 100px;
+   
+  }
+
 }
